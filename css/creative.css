@@ -601,8 +601,8 @@ header.masthead {
     padding: 10px 20px;
     font-weight: 300;
     letter-spacing: 3px;
-    width: 3 00px;
-    width: 500px; }
+    width: 500px;
+    max-width: 80vw; }
 
 @keyframes fadein {
   from {
