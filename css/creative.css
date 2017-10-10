@@ -528,6 +528,8 @@ header.masthead {
   .features-column-left,
   .features-column-right {
     padding: 0 !important; }
+  #features .section-heading {
+    padding: 0px 0px; }
   #contact .right-side {
     display: none; }
   #contact .left-side {
@@ -535,10 +537,16 @@ header.masthead {
     padding: 50px; }
     #contact .left-side .column-1 {
       flex: 1 0 100%;
-      padding: 10px 0; }
+      padding-bottom: 25px;
+      text-align: center; }
     #contact .left-side .column-2 {
       flex: 1 0 100%;
-      padding: 10px 0; }
+      padding: 10px 0;
+      text-align: center; }
+      #contact .left-side .column-2 #mce-EMAIL {
+        text-align: center; }
+      #contact .left-side .column-2 #mc-embedded-subscribe {
+        margin: 0 auto; }
   #footer .left-side {
     flex: 1 0 100%;
     text-align: center;

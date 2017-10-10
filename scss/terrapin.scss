@@ -456,6 +456,10 @@ $terrapinGreen: #009933;
     padding: 0 !important;
   }
 
+  #features .section-heading {
+    padding: 0px 0px;
+  }
+
   #contact {
     .right-side {
       display: none;
@@ -467,12 +471,22 @@ $terrapinGreen: #009933;
 
       .column-1 {
         flex: 1 0 100%;
-        padding: 10px 0;
+        padding-bottom: 25px;
+        text-align: center;
       }
 
       .column-2 {
         flex: 1 0 100%;
         padding: 10px 0;
+        text-align: center;
+
+        #mce-EMAIL {
+          text-align: center;
+        }
+
+        #mc-embedded-subscribe {
+          margin: 0 auto;
+        }
       }
     }
   }
