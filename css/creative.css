@@ -553,7 +553,8 @@ header.masthead {
   display: none;
   left: 50%;
   top: 50%;
-  color: red;
+  text-align: center;
+  color: #009933;
   padding: 20px;
   background: rgba(0, 0, 0, 0.5);
   width: 100vw;
@@ -592,7 +593,8 @@ header.masthead {
     padding: 10px 20px;
     font-weight: 300;
     letter-spacing: 3px;
-    width: 3  00px; }
+    width: 3 00px;
+    width: 500px; }
 
 @keyframes fadein {
   from {
