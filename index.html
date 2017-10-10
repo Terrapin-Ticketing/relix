@@ -2,7 +2,6 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -35,6 +34,12 @@
     ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_NgNCCf3FQpUWFnHvx0ny1");
+       })();
+    </script>
   </head>
 
   <body id="page-top">
@@ -43,7 +48,7 @@
         <div class="nav-bar">
           <img src="./img/tt-logo-icon-white.svg" class="terrapin-nav-logo" />
           <img src="./img/tt-logo-white.svg" class="terrapin-nav-logo-hrz" />
-          <button class="request-demo-btn" id="request-access-button" type="button" name="button">Request Access</button>
+          <a href="#mc_embed_signup"><button class="request-demo-btn" id="request-access-button" type="button" name="button">Request Access</button></a>
         </div>
 
         <div class="mast">

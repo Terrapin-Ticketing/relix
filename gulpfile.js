@@ -41,7 +41,7 @@ gulp.task('minify-css', ['sass'], function() {
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
 });
 
 // Minify custom JS
