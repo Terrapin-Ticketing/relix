@@ -542,15 +542,17 @@ $terrapinGreen: #009933;
   }
 
   .request-form-button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
+    // background-color: Transparent;
+    // background-repeat:no-repeat;
     border: none;
     cursor:pointer;
     overflow: hidden;
     outline:none;
-
-    color: $terrapinGreen;
     border: 1px solid $terrapinGreen;
+
+    background: $terrapinGreen;
+    color: $white;
+
     text-transform: uppercase;
     padding: 10px 20px;
 
@@ -558,6 +560,14 @@ $terrapinGreen: #009933;
     letter-spacing: 3px;
     width: 500px;
     max-width: 80vw;
+  }
+
+  .request-form-button:hover {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    color: $terrapinGreen;
+    border: 1px solid $terrapinGreen;
+
   }
 }
 
