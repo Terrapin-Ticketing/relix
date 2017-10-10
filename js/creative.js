@@ -1,22 +1,55 @@
-// 
-// function emailSend(name, notes, email) {
-//   emailjs.send('info','template_0iOPQteR', {
-//     name: 'James', notes: 'Check this out!'
-//   })
-//     .then(function(response) {
-//        console.log('SUCCESS. status=%d, text=%s', response.status, response.text);
-//     }, function(err) {
-//        console.log('FAILED. error=', err);
-//     });
-// }
-// $('#request-access-button').click(function(e) {
-//   emailSend();
-// });
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
 
 (function($) {
   "use strict"; // Start of use strict
 
-  console.log('seinding meail');
+  function emailSend(name, email) {
+    $('.request-form-button').attr('disabled', 'disabled');
+    $('.request-form-button').css('border-color', 'gray');
+    $('.request-form-button').css('color', 'gray');
+    $('.request-form-button').css('cursor', 'default');
+
+    emailjs.send('info','template_0iOPQteR', {
+      email: email, name: name
+    })
+      .then(function(response) {
+        // close modal
+        $('.request-modal').css('display', 'none');
+        console.log('SUCCESS. status=%d, text=%s', response.status, response.text);
+      }, function(err) {
+        alert('FAILED TO SEND EMAIL: ', err);
+      });
+  }
+
+  $('#request-access-button').click(function(e) {
+    $('.request-form').click(function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+    });
+
+    $('.request-modal').css('display', 'flex');
+    $('.request-modal').click(function(e) {
+      e.preventDefault();
+      $('.request-modal').css('display', 'none');
+    });
+
+    $('.request-form-button').click(function(e) {
+      e.preventDefault();
+      var name = $('.request-form-name').val();
+      var email = $('.request-form-email').val();
+
+      if (validateEmail(email)) {
+        return emailSend(name, email);
+      }
+
+      $('.request-form-email').css('border-color', 'red');
+
+    });
+  });
 
 
   // Smooth scrolling using jQuery easing
