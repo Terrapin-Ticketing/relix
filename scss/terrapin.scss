@@ -490,3 +490,51 @@ $terrapinGreen: #009933;
     }
   }
 }
+
+
+.request-modal {
+  position: fixed;
+  display: none;
+  left: 50%;
+  top: 50%;
+  // position: fixed;
+  color: red;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+
+  .request-form {
+    display: flex;
+    background: white;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .request-form > * {
+    margin: 10px 0;
+    padding: 10px 20px;
+  }
+
+  .request-form-button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+
+    color: $terrapinGreen;
+    border: 1px solid $terrapinGreen;
+    text-transform: uppercase;
+    padding: 10px 20px;
+
+    font-weight: 300;
+    letter-spacing: 3px;
+    width: 300px;
+  }
+}
