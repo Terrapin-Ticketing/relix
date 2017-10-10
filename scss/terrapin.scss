@@ -98,7 +98,7 @@ $terrapinGreen: #009933;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     flex: 1;
-    min-width: 100vw;
+    // min-width: 100vw;
     padding: 0 300px;
     margin-bottom: 60px;
     text-align: center;
@@ -398,7 +398,7 @@ $terrapinGreen: #009933;
 
 #footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   background: #009933;
   color: #ffffff;
   padding: 25px 25px;
@@ -411,6 +411,9 @@ $terrapinGreen: #009933;
     display: block;
     flex: 1;
     text-align: right;
+    img {
+      padding: 0px 5px;
+    }
   }
 }
 
@@ -451,5 +454,39 @@ $terrapinGreen: #009933;
   .features-column-right
   {
     padding: 0 !important;
+  }
+
+  #contact {
+    .right-side {
+      display: none;
+    }
+
+    .left-side {
+      flex-wrap: wrap;
+      padding: 50px;
+
+      .column-1 {
+        flex: 1 0 100%;
+        padding: 10px 0;
+      }
+
+      .column-2 {
+        flex: 1 0 100%;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  #footer {
+    .left-side {
+      flex: 1 0 100%;
+      text-align: center;
+      padding: 10px;
+    }
+    .right-side {
+      flex: 1 0 100%;
+      text-align: center;
+      padding: 10px;
+    }
   }
 }

@@ -281,7 +281,6 @@ header.masthead {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     flex: 1;
-    min-width: 100vw;
     padding: 0 300px;
     margin-bottom: 60px;
     text-align: center;
@@ -495,7 +494,7 @@ header.masthead {
 
 #footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   background: #009933;
   color: #ffffff;
   padding: 25px 25px;
@@ -506,6 +505,8 @@ header.masthead {
     display: block;
     flex: 1;
     text-align: right; }
+    #footer .right-side img {
+      padding: 0px 5px; }
 
 @media (max-width: 767px) {
   #about-us .right-side {
@@ -526,7 +527,26 @@ header.masthead {
     min-width: 100vw !important; }
   .features-column-left,
   .features-column-right {
-    padding: 0 !important; } }
+    padding: 0 !important; }
+  #contact .right-side {
+    display: none; }
+  #contact .left-side {
+    flex-wrap: wrap;
+    padding: 50px; }
+    #contact .left-side .column-1 {
+      flex: 1 0 100%;
+      padding: 10px 0; }
+    #contact .left-side .column-2 {
+      flex: 1 0 100%;
+      padding: 10px 0; }
+  #footer .left-side {
+    flex: 1 0 100%;
+    text-align: center;
+    padding: 10px; }
+  #footer .right-side {
+    flex: 1 0 100%;
+    text-align: center;
+    padding: 10px; } }
 
 .call-to-action {
   padding: 50px 0; }
