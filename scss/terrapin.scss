@@ -1,0 +1,455 @@
+$terrapinGreen: #009933;
+
+#endorsements {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #404040;
+  color: #ffffff;
+  padding: 10px 20px;
+
+  .startupcincy-container {
+    opacity: .95;
+    height: auto;
+  }
+
+  a.hackcincy-container {
+    color: #ffffff;
+  }
+  a.hackcincy-container:hover {
+    text-decoration: none;
+  }
+
+  .hackcincy-container {
+    display: flex;
+    opacity: .90;
+    color: #ffffff;
+    margin-right: 35px;
+    margin-left: 3vw;
+
+    .winner-text-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      align-self: center;
+      margin-left: 10px;
+      line-height: normal;
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      span {
+        font-size: 1.3rem;
+        font-weight: lighter;
+      }
+    }
+    .winner-image-container {
+      align-self: center;
+      max-width: 200px;
+      a {
+        align-self: center;
+      }
+      img {
+        margin: auto 0;
+        max-width: 100%;
+        // max-height: 100%;
+        height: auto;
+        background-color: #BE1E2D;
+      }
+    }
+  }
+}
+
+  // padding: 20px;
+  // // background: url('../img/white-triangle-background.png') !important;
+  // background: #f7f7f7;
+  // padding: 80px 0;
+  // font-family: 'Montserrat', sans-serif;
+  // color: #093;
+  //
+  // .section-heading {
+  //   font-family: 'Montserrat', sans-serif;
+  //   font-weight: 300;
+  //   flex: 1;
+  //   min-width: 100vw;
+  //   padding: 0 300px;
+  //   margin-bottom: 60px;
+  //   text-align: center;
+  // }
+  //
+  // .qr-code-container {
+  //   display: flex;
+  //   align-items: center;
+  //   flex-wrap: wrap;
+  //   width: 80vw;
+  //   margin: 0 auto;
+  // }
+
+#problem {
+  padding: 20px;
+  background: url('../img/white-triangle-background.png') !important;
+  background: #f7f7f7;
+  padding: 80px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #093;
+
+  .section-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    flex: 1;
+    min-width: 100vw;
+    padding: 0 300px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-top: 40px;
+    // font-size: 1.1rem;
+  }
+
+  // .qr-code-container {
+  //   background: red;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   align-items: center;
+  //   width: 80vw;
+  //   margin: 0 auto;
+  // }
+
+  .problem-container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    // flex-direction: column;
+  }
+
+  padding: 20px;
+
+  .info {
+    flex: 3;
+    font-size: 1.2rem;
+    min-width: 50vw;
+  }
+
+  .slider-divider {
+    flex: 0.3;
+  }
+
+  .icon-container {
+    flex: 1;
+  }
+
+  .slider-icon {
+    flex: 1;
+  }
+
+  .slider {
+    display: flex;
+    flex: 1;
+    // max-width: 300px;
+    height: 149px;
+    margin: 20px auto;
+    position: relative;
+    justify-content: center;
+  }
+  .slide1,.slide2,.slide3,.slide4,.slide5 {
+    position: absolute;
+    width: 100%;
+    max-width: 149px;
+    height: 100%;
+    border: 4px solid black;
+    border-radius: 5px;
+  }
+  .slide1 {
+    background: url('../img/qrtest (1).png')no-repeat center;
+        background-size: auto;
+        animation:fade 8s infinite;
+        -webkit-animation:fade 8s infinite;
+  }
+  .slide2 {
+    background: url('../img/qrtest (2).png')no-repeat center;
+        background-size: auto;
+        animation:fade2 8s infinite;
+        -webkit-animation:fade2 8s infinite;
+  }
+  .slide3 {
+      background: url('../img/qrtest (3).png')no-repeat center;
+        background-size: auto;
+      animation:fade3 8s infinite;
+  -webkit-animation:fade3 8s infinite;
+  }
+  @keyframes fade
+  {
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+  }
+  @keyframes fade2
+  {
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+  }
+  @keyframes fade3
+  {
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+  }
+}
+
+#reasoning {
+  // background: url('../img/white-triangle-background.png') !important;
+  background: #f7f7f7;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $white;
+  z-index: 1;
+  padding: 20px;
+
+  .interface-img {
+    // position: absolute;
+    padding: 20px;
+  }
+
+  h4 {
+    color: $terrapinGreen;
+    width: 60vw;
+    text-align: center;
+    font-size: 2.1rem;
+  }
+}
+
+#features {
+  display: flex;
+  flex: 1;
+  // align-items: center;
+  // flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  background: black;
+  color: #ffffff;
+  padding: 80px 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('../img/green-triangle-background.png');
+  background-size: cover;
+
+
+
+  .features-column {
+    display: flex;
+    // flex-wrap: wrap;
+    flex: 1;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+    // width: 50vw;
+
+    .feature-item {
+      align-self: center;
+      width: 30vw;
+      min-width: 400px;
+      min-height: 90px;
+      flex: 1;
+      padding: 40px 0;
+    }
+  }
+
+  .features-column-left {
+    @extend .features-column;
+    padding: 0 5px 0 20px;
+  }
+
+  .features-column-right {
+    @extend .features-column;
+    padding: 0 20px 0 5px;
+  }
+
+
+  .section-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    flex: 1;
+    min-width: 100vw;
+    padding: 0 300px;
+    margin-bottom: 60px;
+  }
+
+  span.bold {
+    font-weight: 700;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+
+    .feature-text {
+      max-width: 350px;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+
+  }
+}
+
+#about-us {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url('../img/5-crowd-footer.png');
+  background-size: cover;
+
+  .left-side {
+    flex: 1;
+    padding: 100px 25px;
+    background: rgba(0,153,51, .85);
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    .top-paragraph {
+      display: block;
+      margin-bottom: 25px;
+      .bold {
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+  }
+  .right-side {
+    display: block;
+    flex: 1;
+  }
+}
+
+#contact {
+  // padding: 100px 0;
+  display: flex;
+
+  .left-side {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex: 1;
+
+    color: #009933;
+    padding: 100px 70px;
+    font-weight: 200;
+    // min-width: 450px;
+    .header {
+      font-weight: bold;
+    }
+    .column-1 {
+      flex: 1;
+      .address {
+        margin-top: 15px;
+      }
+      .other-contact {
+        margin-top: 15px;
+      }
+    }
+    .column-2 {
+      flex: 1;
+      .text {
+        margin: 15px 0 25px 0;
+      }
+
+      #mc_embed_signup input.email {
+        background: #eaeef1;
+        border-radius: 0px;
+        border: none;
+        width: 100%;
+      }
+
+      #mc_embed_signup form {
+        padding: 0 0 !important;
+      }
+
+      #mc-embedded-subscribe {
+        color: #ffffff;
+        background: #009933;
+      }
+    }
+
+  }
+
+  .right-side {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    position: relative;
+
+    .terrapin-nav-logo-green {
+      position: absolute;
+      width: 630px;
+      right: -315px;
+      top: -92px;
+    }
+  }
+}
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  background: #009933;
+  color: #ffffff;
+  padding: 25px 25px;
+  font-weight: lighter;
+
+  .left-side {
+    flex: 1;
+  }
+  .right-side {
+    display: block;
+    flex: 1;
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  #about-us {
+    .right-side {
+      display: none !important;
+    }
+  }
+
+  .slider-divider {
+    display: none !important;
+  }
+
+  .slider-icon {
+    min-width: 350px !important;
+  }
+
+  .info {
+    text-align: center !important;
+    font-size: 1.1em;
+  }
+
+  .terrapin-nav-logo-green {
+    display: none;
+  }
+
+  .section-heading {
+    padding: 0 10px !important;
+  }
+
+  .feature-item {
+    padding: 20px 10px !important;
+    min-width: 100vw !important;
+  }
+
+  .features-column-left,
+  .features-column-right
+  {
+    padding: 0 !important;
+  }
+}

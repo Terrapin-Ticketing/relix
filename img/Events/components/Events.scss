@@ -1,0 +1,137 @@
+.events-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.ReactModalPortal > * {
+    // When the modal is closed, overlay div has no css class
+    // This selector should be overridden by the `&--after-open` class below
+    opacity: 0;
+}
+.ReactModal__Overlay {
+    transition: opacity 200ms ease-in-out;
+    background: rgba(0, 0, 0, 0.15);
+    &--after-open {
+        opacity: 1;
+    }
+    &--before-close {
+        opacity: 0;
+    }
+}
+
+.ReactModal__Content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+
+
+  .checkout-header {
+    text-align: center;
+  }
+
+  .event-details {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+    .event-header {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .event-name {
+      flex: 1;
+      background: #ececec;
+      padding: 15px;
+    }
+
+    .event-price {
+      flex: 1;
+      padding: 15px;
+
+    }
+
+    .purchase-ticket {
+      flex: 1;
+      padding: 15px;
+    }
+  }
+
+  button.notLoading {
+    margin-top: 20px !important;
+    border-radius: 5px;
+    padding: 10px;
+    background: #009900;
+    color: #ffffff;
+    border: #009900 solid 1px;
+    margin: 0 auto;
+  }
+
+  button.isLoading {
+    margin-top: 20px !important;
+    border-radius: 5px;
+    padding: 10px;
+    background: #009900;
+    color: #ffffff;
+    border: #009900 solid 1px;
+    margin: 0 auto;
+    cursor: not-allowed;
+    background: #009900;
+    width: inherit;
+  }
+
+  button.notLoading:hover {
+    color: #009900;
+    background: #ffffff;
+    border: #009900 solid 1px;
+    cursor: pointer;
+  }
+}
+
+table {
+  width: 100%;
+
+  td {
+    padding: 10px;
+    display: flex;
+  }
+
+  th {
+    display: flex;
+    text-align: left;
+    background: #c7c7c7;
+    margin-bottom: -2px;
+    td {
+      justify-content: flex-start;
+      flex: 1;
+    }
+    .actions {
+      text-align: center;
+    }
+  }
+
+  tbody {
+    tr {
+      display: flex;
+      padding: 10px;
+    }
+    tr.odd {
+      background: #ececec;
+    }
+    td {
+      flex: 1;
+      justify-content: flex-start;
+      align-self: center;
+      padding: 10px;
+    }
+  }
+}
