@@ -93,6 +93,9 @@ $terrapinGreen: #009933;
   padding: 80px 0;
   font-family: 'Montserrat', sans-serif;
   color: #093;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 
   .section-heading {
     font-family: 'Montserrat', sans-serif;
@@ -143,14 +146,24 @@ $terrapinGreen: #009933;
     flex: 1;
   }
 
+  $height: 149px;
+  .slider-holder {
+    position: relative;
+    display: flex;
+    height: ($height / 2) - 10;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+
   .slider {
     display: flex;
     flex: 1;
-    // max-width: 300px;
-    height: 149px;
-    margin: 20px auto;
-    position: relative;
-    justify-content: center;
+    min-width: 149px;
+    height: $height;
+    position: absolute;
+    align-self: center;
   }
   .slide1,.slide2,.slide3,.slide4,.slide5 {
     position: absolute;
