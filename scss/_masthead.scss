@@ -1,12 +1,12 @@
 // Styling for the masthead
-header.masthead {
+header.mast-head {
   font-family: 'Montserrat', sans-serif;
   position: relative;
   width: 100%;
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url('../img/phish1.jpg');
+  background-image: url('../img/phish1.png');
   background-position: center;
   @include background-cover;
   .header-content {
