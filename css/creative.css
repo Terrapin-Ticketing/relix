@@ -598,7 +598,8 @@ header.masthead {
     flex-direction: column; }
   .request-modal .request-form > * {
     margin: 10px 0;
-    padding: 10px 20px; }
+    padding: 10px 20px;
+    text-align: center; }
   .request-modal .request-form-button {
     border: none;
     cursor: pointer;
