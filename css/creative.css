@@ -271,16 +271,14 @@ header.mast-head {
         background-color: #BE1E2D; }
 
 #problem {
-  padding: 20px;
   background: url("../img/white-triangle-background.png") !important;
   background: #f7f7f7;
-  padding: 80px 0;
+  padding: 20px 70px;
   font-family: 'Montserrat', sans-serif;
   color: #093;
   position: relative;
   display: flex;
-  flex-direction: column;
-  padding: 20px; }
+  flex-direction: column; }
   #problem .section-heading {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -454,7 +452,7 @@ header.mast-head {
   background-size: cover; }
   #about-us .left-side {
     flex: 1;
-    padding: 100px 25px;
+    padding: 100px 70px;
     background: rgba(0, 153, 51, 0.85);
     color: #ffffff;
     font-size: 1.5rem;
@@ -533,6 +531,10 @@ header.mast-head {
 @media (max-width: 767px) {
   #about-us .right-side {
     display: none !important; }
+  #about-us .left-side {
+    padding: 20px 40px !important; }
+  #problem {
+    padding: 20px 40px !important; }
   .slider-divider {
     display: none !important; }
   .slider-icon {

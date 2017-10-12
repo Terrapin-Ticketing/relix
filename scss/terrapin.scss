@@ -88,10 +88,9 @@ $gray: gray;
   // }
 
 #problem {
-  padding: 20px;
   background: url('../img/white-triangle-background.png') !important;
   background: #f7f7f7;
-  padding: 80px 0;
+  padding: 20px 70px;
   font-family: 'Montserrat', sans-serif;
   color: #093;
   position: relative;
@@ -126,8 +125,6 @@ $gray: gray;
     align-items: center;
     // flex-direction: column;
   }
-
-  padding: 20px;
 
   .info {
     flex: 3;
@@ -330,11 +327,12 @@ $height: 149px;
 
   .left-side {
     flex: 1;
-    padding: 100px 25px;
+    padding: 100px 70px;
     background: rgba(0,153,51, .85);
     color: #ffffff;
     font-size: 1.5rem;
     font-weight: lighter;
+
     .top-paragraph {
       display: block;
       margin-bottom: 25px;
@@ -444,6 +442,14 @@ $height: 149px;
     .right-side {
       display: none !important;
     }
+
+    .left-side {
+      padding: 20px 40px !important;
+    }
+  }
+
+  #problem {
+    padding: 20px 40px !important;
   }
 
   .slider-divider {
