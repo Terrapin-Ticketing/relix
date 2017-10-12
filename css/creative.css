@@ -164,10 +164,10 @@ body {
 @media (max-width: 767px) {
   .nav-bar {
     padding: 10px 10px; }
-  .terrapin-nav-logo {
-    display: block !important; }
-  .terrapin-nav-logo-hrz {
-    display: none !important; } }
+  .request-demo-btn {
+    margin-top: 20px !important; }
+  .nav-bar {
+    flex-direction: column !important; } }
 
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
