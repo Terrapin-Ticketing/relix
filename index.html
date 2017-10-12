@@ -8,6 +8,13 @@
     <meta name="author" content="">
 
     <title>Terrapin Ticketing - Tickets on Blockchain</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PCPR86N');</script>
+  <!-- End Google Tag Manager -->
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -44,6 +51,10 @@
   </head>
 
   <body id="page-top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCPR86N"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="page-container">
       <header class="mast-head">
         <div class="nav-bar">
@@ -58,7 +69,7 @@
             <h3>Request Access</h3>
             <input class="request-form-name" type="text" name="" value="" placeholder="name" />
             <input class="request-form-email" type="email" name="request-email" placeholder="email" />
-            <button class="request-form-button" type="submit" name="button">
+            <button class="request-form-button" id="request-access-send-button" type="submit" name="button">
               Submit
             </button>
           </form>
@@ -71,7 +82,7 @@
             <div class="divider"></div>
             <!-- <p>Terrapin is a live event ticketing platform that leverages the Ethereum blockchain to issue,
               buy, sell, transfer, and verify ticket authenticity and ownership.</p> -->
-              <p>Terrapin Ticketing is a ticketing platform that allows artists and venues to sell tickets directly to fans with no scalping, no counterfeits, and no fees.</p>
+              <p>Terrapin Ticketing is a ticketing platform that allows artists and venues to sell tickets directly to fans with no counterfeits and no scalping.</p>
               <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about-us">Tell Me More</a> -->
             </div>
           </div>
@@ -135,6 +146,7 @@
         <h2 class="section-heading">
           Terrapin is a ticketing platform that provides "smart tickets" that can be transfered <span class="bold">securely</span> online.
         </h2>
+        <div class="features-container">
 
         <ul class="features-column-left">
           <li class="feature-item">
@@ -165,6 +177,7 @@
             <div class="feature-text">In addition to traditional credit cards, fans can pay for tickets with Ether (ETH) and other cryptocurrencies.</div>
           </li>
         </ul>
+      </div>
 
       </section>
 
@@ -327,6 +340,8 @@
   requestAccessButton.addEventListener('click', clickRequestAccess, false);
   var requestAccessButton = document.querySelector( "#request-access-send-button" );
   requestAccessButton.addEventListener('click', clickRequestAccessSend, false);
+  var subscribeButton = document.querySelector( "input#mc-embedded-subscribe" );
+  subscribeButton.addEventListener('click', clickMailchimpSubscribeButton, false);
 
   function clickRequestAccess(event) {
     console.log('clicked clickRequestAccess');
@@ -343,6 +358,15 @@
       eventCategory: 'RequestAccess',
       eventAction: 'click',
       eventLabel: 'modal'
+    });
+  }
+
+  function clickMailchimpSubscribeButton(event) {
+    console.log('clicked clickMailchimpSubscribeButton');
+    ga('send', 'event', {
+      eventCategory: 'MailchimpSubscribeButton',
+      eventAction: 'click',
+      eventLabel: 'subscribeButton'
     });
   }
 
