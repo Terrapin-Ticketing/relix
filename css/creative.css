@@ -302,6 +302,8 @@ header.mast-head {
     flex: 0.3; }
   #problem .icon-container {
     flex: 1; }
+  #problem p {
+    color: gray; }
 
 .slider-holder {
   position: relative;
@@ -480,12 +482,15 @@ header.mast-head {
     #contact .left-side .column-1 {
       flex: 1; }
       #contact .left-side .column-1 .address {
+        color: gray;
         margin-top: 15px; }
       #contact .left-side .column-1 .other-contact {
+        color: gray;
         margin-top: 15px; }
     #contact .left-side .column-2 {
       flex: 1; }
       #contact .left-side .column-2 .text {
+        color: gray;
         margin: 15px 0 25px 0; }
       #contact .left-side .column-2 #mc_embed_signup input.email {
         background: #eaeef1;
@@ -626,6 +631,9 @@ header.mast-head {
     background-repeat: no-repeat;
     color: #009933;
     border: 1px solid #009933; }
+
+.subscribe-button {
+  font-family: 'Montserrat', sans-serif; }
 
 @keyframes fadein {
   from {
