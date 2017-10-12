@@ -141,79 +141,71 @@ $terrapinGreen: #009933;
   .icon-container {
     flex: 1;
   }
+}
 
-  .slider-icon {
-    flex: 1;
-  }
+$height: 149px;
+.slider-holder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  $height: 149px;
-  .slider-holder {
-    position: relative;
-    display: flex;
-    height: ($height / 2) - 10;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-  }
+.slider {
+  margin: auto;
+  min-width: 149px;
+  height: $height;
+  align-self: center;
+  margin-bottom: -100px;
+}
 
-  .slider {
-    display: flex;
-    flex: 1;
-    min-width: 149px;
-    height: $height;
-    position: absolute;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .slide1,.slide2,.slide3,.slide4,.slide5 {
-    position: absolute;
-    width: 100%;
-    max-width: 149px;
-    height: 100%;
-    border: 4px solid black;
-    border-radius: 5px;
-  }
-  .slide1 {
-    background: url('../img/qrtest (1).png')no-repeat center;
-        background-size: auto;
-        animation:fade 8s infinite;
-        -webkit-animation:fade 8s infinite;
-  }
-  .slide2 {
-    background: url('../img/qrtest (2).png')no-repeat center;
-        background-size: auto;
-        animation:fade2 8s infinite;
-        -webkit-animation:fade2 8s infinite;
-  }
-  .slide3 {
-      background: url('../img/qrtest (3).png')no-repeat center;
-        background-size: auto;
-      animation:fade3 8s infinite;
-  -webkit-animation:fade3 8s infinite;
-  }
-  @keyframes fade
-  {
-    0%   {opacity:1}
-    33.333% { opacity: 0}
-    66.666% { opacity: 0}
-    100% { opacity: 1}
-  }
-  @keyframes fade2
-  {
-    0%   {opacity:0}
-    33.333% { opacity: 1}
-    66.666% { opacity: 0 }
-    100% { opacity: 0}
-  }
-  @keyframes fade3
-  {
-    0%   {opacity:0}
-    33.333% { opacity: 0}
-    66.666% { opacity: 1}
-    100% { opacity: 0}
-  }
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  max-width: 149px;
+  height: $height;
+  border: 4px solid black;
+  border-radius: 5px;
+}
+
+.slide1 {
+  background: url('../img/qrtest (1).png')no-repeat center;
+      background-size: auto;
+      animation:fade 8s infinite;
+      -webkit-animation:fade 8s infinite;
+}
+.slide2 {
+  background: url('../img/qrtest (2).png')no-repeat center;
+      background-size: auto;
+      animation:fade2 8s infinite;
+      -webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+    background: url('../img/qrtest (3).png')no-repeat center;
+      background-size: auto;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
 }
 
 #reasoning {
@@ -255,7 +247,7 @@ $terrapinGreen: #009933;
   font-family: 'Montserrat', sans-serif;
   background-image: url('../img/green-triangle-background.png');
   background-size: cover;
-
+  margin-top: 30px;
 
   .features-container {
     display: flex;
