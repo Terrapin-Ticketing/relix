@@ -391,7 +391,8 @@ header.mast-head {
     color: #009933;
     width: 60vw;
     text-align: center;
-    font-size: 2.1rem; }
+    font-size: 2.1rem;
+    margin-top: 40px; }
 
 #features {
   display: flex;
